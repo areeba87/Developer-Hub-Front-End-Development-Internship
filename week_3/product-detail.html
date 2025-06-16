@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Detail | E-commerce</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <img src="assets/images/logo-colored.svg" alt="Logo" class="logo" />
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="product-listing.html">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-detail container">
+      <div class="detail-wrapper">
+        <img src="assets/images/7.jpg" alt="Laptop" class="detail-image"/>
+        <div class="detail-info">
+          <h1>Laptop</h1>
+          <p class="price">PKR 85,000</p>
+          <p class="description">
+            A high-performance laptop with the latest specs for work, gaming, and entertainment.
+          </p>
+          <label for="size">Choose Size:</label>
+          <select id="size" onchange="selectSize()">
+            <option value="">--Select--</option>
+            <option value="13-inch">13-inch</option>
+            <option value="15-inch">15-inch</option>
+            <option value="17-inch">17-inch</option>
+          </select>
+          <p id="selected-size" style="margin-top: 10px; font-weight: bold;"></p>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Additional Product Detail Sections -->
+      <div class="detail-wrapper">
+        <img src="assets/images/1.jpg" alt="Smartphone" class="detail-image"/>
+        <div class="detail-info">
+          <h1>Smartphone</h1>
+          <p class="price">PKR 16,500</p>
+          <p class="description">
+            Compact and powerful smartphone with dual cameras, fast charging, and long battery life.
+          </p>
+        </div>
+      </div>
+
+      <div class="detail-wrapper">
+        <img src="assets/images/2.jpg" alt="Tablet" class="detail-image"/>
+        <div class="detail-info">
+          <h1>Tablet</h1>
+          <p class="price">PKR 35,000</p>
+          <p class="description">
+            Sleek and lightweight tablet with a vibrant display, great for reading, streaming, and productivity.
+          </p>
+        </div>
+      </div>
+
+      <div class="detail-wrapper">
+        <img src="assets/images/3.jpg" alt="Android Phone" class="detail-image"/>
+        <div class="detail-info">
+          <h1>Android Phone</h1>
+          <p class="price">PKR 50,000</p>
+          <p class="description">
+            Feature-packed Android phone with AMOLED display, powerful processor, and excellent camera.
+          </p>
+        </div>
+      </div>
+
+      <div class="detail-wrapper">
+        <img src="assets/images/5.jpg" alt="Headphones" class="detail-image"/>
+        <div class="detail-info">
+          <h1>Headphones</h1>
+          <p class="price">PKR 1,500</p>
+          <p class="description">
+            Over-ear headphones with noise isolation, deep bass, and comfortable design for long use.
+          </p>
+        </div>
+      </div>
+
+      <div class="detail-wrapper">
+        <img src="assets/images/6.jpg" alt="Camera" class="detail-image"/>
+        <div class="detail-info">
+          <h1>Camera</h1>
+          <p class="price">PKR 200,000</p>
+          <p class="description">
+            Professional-grade DSLR camera with 4K video recording and interchangeable lenses.
+          </p>
+        </div>
+      </div>
+
+      <div class="detail-wrapper">
+        <img src="assets/images/8.jpg" alt="Accessories" class="detail-image"/>
+        <div class="detail-info">
+          <h1>Accessories</h1>
+          <p class="price">PKR 2,500</p>
+          <p class="description">
+            Essential tech accessories including cables, chargers, and adapters for all your devices.
+          </p>
+        </div>
+      </div>
+
+       <main>
+    <section class="product-detail container">
+      <div class="detail-wrapper">
+        <img src="assets/images/9.jpg" alt="P9 Headphones" class="detail-image"/>
+        <div class="detail-info">
+          <h1>P9 Headphones</h1>
+          <p class="price">PKR 45,000</p>
+          <p class="description">
+            Experience rich, immersive sound with the P9 Headphones. Engineered for clarity and comfort, these over-ear headphones are perfect for music lovers, gamers, and professionals who demand premium quality audio.
+          </p>
+
+          <label for="color">Choose Color:</label>
+          <select id="color" onchange="selectColor()">
+            <option value="">--Select--</option>
+            <option value="Black">Black</option>
+            <option value="Silver">Silver</option>
+            <option value="Rose Gold">Rose Gold</option>
+          </select>
+
+          <p id="selected-color" style="margin-top: 10px; font-weight: bold;"></p>
+
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+      <div class="detail-wrapper">
+        <img src="assets/images/10.jpg" alt="Electric Kettle" class="detail-image"/>
+        <div class="detail-info">
+          <h1>Electric Kettle</h1>
+          <p class="price">PKR 5,000</p>
+          <p class="description">
+            Fast-boiling electric kettle with automatic shut-off and stainless steel body.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Help</a>
+      </div>
+      <p>© 2025 MyStore</p>
+    </div>
+  </footer>
+
+  <script>
+    function selectSize() {
+      const size = document.getElementById('size').value;
+      document.getElementById('selected-size').textContent = size ? `You selected: ${size}` : '';
+    }
+    
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
